@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rouded_item">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="165dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/product_item_background">
+
+        <ImageView
+            android:id="@+id/img_boiler"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/boiler"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#005143"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_first_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="T"
+            android:textColor="#005143"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#85BC30"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:id="@+id/txt_second_title"
+            android:text="10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#005143"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="-"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#005143"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:id="@+id/txt_third_title"
+            android:text="0"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        android:text="Модель с устройством принудительного дымоудаления турбо (закрытая камера сгорания)"
+        android:id="@+id/txt_description"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="15sp"
+        android:text="Смотреть"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:paddingTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/watch_arrow"/>
+
+    </LinearLayout>
+
+</LinearLayout>
