@@ -33,6 +33,7 @@ public class ListFragment extends Fragment {
         MainAdapter adapter = new MainAdapter(getActivity(), str);
         Log.d("Актив", getActivity().toString());
         recyclerView.setAdapter(adapter);
+       // recyclerView.setNestedScrollingEnabled(false);
         return view;
     }
 }
